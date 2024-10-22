@@ -3,6 +3,10 @@ class UsersController < ApplicationController
     @user = current_user
   end
 
+  def new
+    @user = current_user
+  end
+  
   private
 
   def user_params
